@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1c5c5;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header {
+    background-color: #93e3f1;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    /* position: fixed; Makes the navbar fixed */
+    top: 0; /* Aligns it to the top of the page */
+    width: 100%; /* Full width */
+    padding: 1em 0; /* Padding for the navbar */
+    z-index: 1000; /* Ensures the navbar is on top */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    background: white;
+    display: block;
+    height: 4px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+.main-image {
+    width: 100%;
+    height: 70vh;
+    margin-top: 0.1rem;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+.content-section{
+    color: rgb(230, 200, 200);
+    text-align: center;
+   /* adding bg image */
+   background-image: url(N.jpg) ;
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   color: white;
+   padding: 20px;
+   justify-content: center;
+
+
+    
+}
+
+
+#home h2{
+    font-size: 2em; /* Larger font size */
+    color: #fff; /* bold white color */
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Space between letters */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#home p{
+    font-size: 1em; /* Default font size */
+    color: black; /* bold black color */
+    line-height: 1.6; /* Line spacing */
+    text-align: center; /* center text */
+    margin: 0 20px; /* Margin on the sides */
+    
+}
+
+#about h2{
+    font-size: 2em; /* Larger font size */
+    color: #fff; /* bold white color */
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Space between letters */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#about p{
+    font-size: 1em; /* Default font size */
+    color: black; /* bold black color */
+    line-height: 1.6; /* Line spacing */
+    text-align: center; /* center text */
+    margin: 0 20px; /* Margin on the sides */
+    
+}
+
+#services h2{
+    font-size: 2em; /* Larger font size */
+    color: #fff; /* bold white color */
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Space between letters */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#services p{
+    font-size: 1em; /* Default font size */
+    color: black; /* bold black color */
+    line-height: 1.6; /* Line spacing */
+    text-align: center; /* center text */
+    margin: 0 20px; /* Margin on the sides */
+    
+}
+
+#reportCrime h2{
+    font-size: 2em; /* Larger font size */
+    color: #fff; /* bold white color */
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Space between letters */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#reportCrime p{
+    font-size: 1em; /* Default font size */
+    color: black; /* bold black color */
+    line-height: 1.6; /* Line spacing */
+    text-align: center; /* center text */
+    margin: 0 20px; /* Margin on the sides */
+    
+}
+
+
+.search {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.search input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    margin-right: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #555;
+}
+#crimeDescription{
+    width: 300px;
+    height: 60px;
+}
+#reportCrime button{
+    background-color: #3b423b; 
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to line up with other elements */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 12px; /* Rounded corners */
+    transition-duration: 0.4s; /* Transition effect duration */
+}
+
+#reportCrime button:hover{
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+    border: 2px solid #3b423b; 
+}
+.results {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+    }
+}
