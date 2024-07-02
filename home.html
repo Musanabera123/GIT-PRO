@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexual Offender Registry</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="download.jpg" alt="Logo">
+            <h1>NPPA SOR</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#home" onclick="navigate('home')">Home</a></li>
+                <li><a href="#about" onclick="navigate('about')">About</a></li>
+                <li><a href="#services" onclick="navigate('services')">Services</a></li>
+                <li><a href="#reportCrime" onclick="navigate('reportCrime')">Report Crime</a></li>
+                <li><a href="#contactUs" onclick="navigate('contactUs')">Contact Us</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <img src="N.JPG" alt="Home Image" class="main-image"> -->
+        <section id="home" class="content-section">
+            <h2>Welcome to the Sexual Offender Registry</h2>
+            <p>Providing public safety information and resources.</p>
+            
+        </section>
+        <section id="about" class="content-section" style="display:none;">
+
+            <h2>About Us</h2>
+            <p>Information about our organization and mission.</p>
+        </section>
+        <section id="services" class="content-section" style="display:none;">
+            <h2>Our Services</h2>
+            <p>Details of the services we offer.</p>
+        </section>
+        <section id="contactUs" class="content-section" style="display:none;">
+        </section>
+        
+        <section id="reportCrime" class="content-section" style="display:none;">
+            <h2>Report a Crime</h2>
+            <p>Instructions on how to report a crime.</p>
+            <input type="text" id="crimeDescription" placeholder="Describe the crime">
+            <button onclick="reportCrime()">Report</button>
+        </section>
+        <section class="search">
+            <h2>Search Offender</h2>
+            <input type="text" id="searchInput" placeholder="Enter name or location">
+            <button onclick="searchOffender()">Search</button>
+        </section>
+        <section class="results">
+            <h2>Search Results</h2>
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Location</th>
+                        <th>Crime</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Results will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scrip1.js"></script>
+</body>
+</html>
